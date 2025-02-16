@@ -1,0 +1,28 @@
+/* From this */
+.movie-card button {
+    /* existing styles */
+}
+
+.movie-card button:hover {
+    /* existing styles */
+}
+
+/* To this */
+.movie-card .download-button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    background: #c6ec06f7;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.movie-card .download-button:hover {
+    background: #e6b800;
+}
