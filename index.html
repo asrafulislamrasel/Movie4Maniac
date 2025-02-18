@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie4Maniac - Video Streaming Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">Movie4Maniac</div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/movies" class="nav-link">Movies</a>
+                    <a href="/tv-shows" class="nav-link">TV Shows</a>
+                    <a href="/genres" class="nav-link">Anime</a>
+                </nav>
+
+                <!-- Search and Auth -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <button class="btn btn-primary">Sign In</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/movies" class="nav-link">Movies</a>
+                    <a href="/tv-shows" class="nav-link">TV Shows</a>
+                    <a href="/genres" class="nav-link">Genres</a>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <button class="btn btn-primary btn-full">Sign In</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" alt="Hero Background">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Movie4Maniac       </h1>
+                    <p><!--info-->    </p>
+                    <!--
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <span>Play Now</span>
+                        </button>
+                        <button class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>More Info</span>
+                        </button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Movie Grid Section -->
+        <section class="movie-grid">
+            <div class="container">
+                <h2>New Upload</h2>
+                <div class="grid">
+
+                    <!-- Movie Card 1 -->
+                    <div class="movie-card">
+                        <img src="img/Fateh.jpg" alt="The Dark Knight">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>Fateh</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 7.8/10</span>
+                                    <span>2025</span>
+                                </div>
+                                <a href="https://funfornight.blogspot.com/2025/02/fateh.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 2 -->
+                    <div class="movie-card">
+                        <img src="img/The Crooked Man.jpg" alt="Inception">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>Hellboy: The Crooked Man (2025)</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 7.8/10</span>
+                                    <span>2025</span>
+                                </div>
+                                <a href="https://funfornight.blogspot.com/2025/02/hellboy-crooked-man-2024.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 3 -->
+                    <div class="movie-card">
+                        <img src="img/photo_2025-02-18_14-28-44.jpg" alt="Interstellar">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 Rifle Club (2024) - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 7.0/10</span>
+                                    <span>2024</span>
+                                </div>
+                                <a href="https://funfornight.blogspot.com/2025/02/fateh.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Movie Card 4 -->
+
+
+                    <div class="movie-card">
+                        <img src="img/sword fish.jpg" alt="Interstellar">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 Swordfish - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 6.5/10</span>
+                                    <span>2001</span>
+                                </div>
+                                <a href="downloadpage/swor.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Movie Card 5 -->
+
+
+                    <div class="movie-card">
+                        <img src="img/Inheritance.jpg" alt="Interstellar">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 Inheritance - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 5.7/10</span>
+                                    <span>2025</span>
+                                </div>
+                                <a href="downloadpage/inher.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!-- Movie Card 6 -->
+                     
+
+
+                     <!-- Movie Card 6 -->
+                    <div class="movie-card">
+                        <img src="img/The Rock.jpg" alt="The Rock">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 The Rock - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 7.4/10</span>
+                                    <span>1996</span>
+                                </div>
+                                <a href="downloadpage/therock.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Movie Card 7 -->
+
+                     <!-- Movie Card 6 -->
+                     
+
+
+                    
+
+                    <div class="movie-card">
+                        <img src="img/Venom.jpg" alt="Interstellar">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 Venom: The Last Dance - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 6.0/10</span>
+                                    <span>2024</span>
+                                </div>
+                                <a href="downloadpage/vamos.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Movie Card 8 -->
+
+                    <div class="movie-card">
+                        <img src="img/Spider-Man.jpg" alt="Interstellar">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>🎬 Spider-Man: Far from Home - Hindi</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️ IMDb: 7.4/10</span>
+                                    <span>2019</span>
+                                </div>
+                                <a href="downloadpage/Spider-Man.html">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
+                    <!--new upload done-->
+
+                   
+
+
+
+
+
+
+
+                    
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Movie Card 5   varytical -->
+
+                    <div class="movie-card">
+                        <img src="img/coming soon.jpg" alt="Inception">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3>Coming Soon</h3>
+                                <div class="movie-meta">
+                                    <span>⭐️</span>
+                                    <span>0000</span>
+                                </div>
+                                <a href="">
+                                <button class="btn btn-primary btn-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Play</span>
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+ <!-- Movie Card 6 vartical row  -->
+                    
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Movie4Maniac</h3>
+                    <p>Your ultimate destination for streaming movies and TV shows.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/movies">Movies</a></li>
+                        <li><a href="/tv-shows">TV Shows</a></li>
+                        <li><a href="/genres">Genres</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="/account">Account</a></li>
+                        <li><a href="/support">Support Center</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Movie4Maniac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
